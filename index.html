@@ -14,7 +14,7 @@
 
         <div id="div-form">
             <form id="form-veiculo">
-                <label for="modelo">Modelo:</label>
+            <label for="modelo">Modelo:</label>
             <input type="text" id="modelo" name="modelo">
 
             <label for="marca">Marca:</label>
@@ -30,16 +30,31 @@
             <input type="text" id="val-merc" name="val-merc">
 
             <label for="comb">Tipo de Combustível:</label>
+            
+            <div class="gasolina">
+                <label for="gas">Gasolina</label>
+                <input type="radio" name="comb" id="gas" value="gas">
+            </div>
 
-            Gasolina<input type="radio" name="comb" value="gas">
+            <div class="etanol">
+                <label for="eta">Etanol</label>
+                <input type="radio" name="comb" id="eta" value="eta">
+            </div>
 
-            Etanol<input type="radio" name="comb" value="eta">
+            <div class="biocombustivel">
+                <label for="bio">Biocombustível</label>
+                <input type="radio" name="comb" value="bio">
+            </div>
 
-            Biocombustível<input type="radio" name="comb" value="bio">
-             
-            Híbrido<input type="radio" name="comb" value="hibr">
-
-            Elétrico<input type="radio" name="comb" value="elet">
+            <div class="hibrido">
+                <label for="hibr">Híbrido</label>
+                <input type="radio" name="comb" value="hibr">
+            </div>
+            
+            <div class="eletrico">
+                <label for="elet">Elétrico</label>
+                <input type="radio" name="comb" value="elet">
+            </div>
 
             <button type="submit">Adicionar</button>
             <button type="reset">Limpar</button>
