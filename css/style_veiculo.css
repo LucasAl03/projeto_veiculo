@@ -18,6 +18,10 @@ form{
     border-radius: 8px;
 }
 
+.radio{
+    
+}
+
 label, input{
     display: block;
     margin: 10px 0px;
