@@ -3,23 +3,68 @@
     min-height: 600px;
     margin: 20px auto;
     border: solid 1px; 
-    padding: 25px;
+    padding: 2px;
     border-radius: 8px;
+    background-color: aquamarine;
 }
 
 
-#div-form, #div-lista{
+#div-form{
     margin: 50px 0px;
     padding: 5px;
+}
+
+.div-lista-carros{
+    font-size: 1.5em;
+    margin: 20px;
+    padding: 50px;
+    text-transform: uppercase;
 }
 
 form{
     padding: 25px;
     border-radius: 8px;
+    background-color: aquamarine;
 }
 
-.radio{
-    
+.gasolina{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 260px;
+    margin-bottom: 10px;
+}
+
+.etanol{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 260px;
+    margin-bottom: 12px;
+}
+
+.biocombustivel{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 255px;
+    margin-bottom: 12px;
+}
+
+.hibrido{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 260px;
+    margin-bottom: 12px;
+}
+
+.eletrico{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 260px;
+    margin-bottom: 12px;
 }
 
 label, input{
