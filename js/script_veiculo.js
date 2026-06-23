@@ -1,8 +1,5 @@
 //importando calculos
-import { calculoFinal } from './script_calculo'
-import { calculoIdade } from './script_calculo'
-import { calculoIpva } from './script_calculo'
-import { calculoSeg } from './script_calculo'
+import { calculoFinal, calculoIdade, calculoIpva, calculoSeg } from './script_calculo.js'
 
 //array para veiculos
 const veiculos = []
@@ -35,6 +32,7 @@ formVeiculo.addEventListener('submit', (evt)=>{
 
     //limpando o form
     formVeiculo.reset()
+
 })
 
 //função para adicionar veiculos
@@ -51,6 +49,6 @@ const listVeiculo = () => {
     divLista.innerHTML = ''
 
     veiculos.forEach((elem, i)=>{
-        divLista.innerHTML += `${i + 1} - Modelo: ${elem.modelo}, Marca: ${elem.marca}, Placa: ${elem.placa}, Idade do Veículo: ${calculoIdade(elem)}, Valor do Seguro: ${calculoSeg(elem)}, Valor do IPVA: ${calculoIpva(elem)}, Valor Final: ${calculoFinal(elem)}`
+        divLista.innerHTML += `<div class="div-lista-carros"> Veículo ${i + 1} <br> Modelo: ${elem.modelo} <br> Marca: ${elem.marca} <br> Placa: ${elem.placa} <br> Idade do Veículo: ${calculoIdade(elem)} <br> Valor do Seguro: ${calculoSeg(elem)} <br> Valor do IPVA: ${calculoIpva(elem)} <br> Valor Final: ${calculoFinal(elem)}. <p> </div>`
     })
 }
